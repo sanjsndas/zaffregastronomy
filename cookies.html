@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Zaffre Matrix | Cookies Policy — Zero Tracking, Pure Transparency</title>
+    <meta name="description" content="Zaffre Gastronomy Matrix Cookies Policy: our absolute minimal use of essential session cookies, no tracking, no analytics, no third-party cookies. Cobalt transparency.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #0a1128 0%, #0b1a3a 100%);
+            font-family: 'Segoe UI', 'Merriweather', Georgia, 'Times New Roman', serif;
+            color: #eef5ff;
+            line-height: 1.55;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --zaffre-deep: #0014a8;
+            --zaffre-bright: #1e3aff;
+            --cobalt-glow: #3b6eff;
+            --slate-light: #c2d0ff;
+            --midnight-bg: #07112e;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* HEADER consistent with the ecosystem */
+        header {
+            background: rgba(2, 10, 35, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 2px solid var(--zaffre-bright);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-area h1 {
+            font-size: 2.7rem;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff, #7c9cff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+        }
+
+        .logo-area p {
+            color: var(--slate-light);
+            font-style: italic;
+            font-size: 1rem;
+            border-left: 3px solid var(--cobalt-glow);
+            padding-left: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #bdd4ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+            border-bottom: 1px solid transparent;
+        }
+
+        nav a:hover {
+            color: white;
+            border-bottom-color: var(--cobalt-glow);
+        }
+
+        /* page unique style */
+        .cookie-hero {
+            margin: 2rem 0 1rem;
+            text-align: center;
+        }
+
+        .cookie-hero h2 {
+            font-size: 2.6rem;
+            background: linear-gradient(120deg, #ffffff, #8aadff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .privacy-card {
+            background: rgba(8, 20, 48, 0.7);
+            backdrop-filter: blur(3px);
+            border-radius: 2rem;
+            padding: 2rem 2.2rem;
+            border: 1px solid var(--zaffre-bright);
+            box-shadow: 0 20px 30px -12px #00000066;
+            margin: 2rem 0;
+        }
+
+        .section-title {
+            font-size: 1.9rem;
+            margin: 1.6rem 0 1rem 0;
+            color: #bed6ff;
+            border-left: 5px solid var(--cobalt-glow);
+            padding-left: 1rem;
+        }
+
+        .subsection-title {
+            font-size: 1.4rem;
+            margin: 1.2rem 0 0.6rem 0;
+            color: #cce2ff;
+            font-weight: 600;
+        }
+
+        .legal-text {
+            margin-bottom: 1rem;
+            line-height: 1.65;
+        }
+
+        .legal-text ul, .legal-text ol {
+            margin-left: 1.8rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .legal-text li {
+            margin: 0.6rem 0;
+        }
+
+        .badge-policy {
+            background: #0a1a3a;
+            padding: 0.2rem 1rem;
+            border-radius: 60px;
+            display: inline-block;
+            font-size: 0.8rem;
+            font-family: monospace;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-block {
+            background: #07152e;
+            border-left: 5px solid var(--cobalt-glow);
+            padding: 1rem 1.5rem;
+            border-radius: 1.5rem;
+            margin: 1.2rem 0;
+        }
+
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #0c1b3d60;
+            border-radius: 1.2rem;
+            overflow: hidden;
+            margin: 1.5rem 0;
+        }
+
+        .cookie-table th, .cookie-table td {
+            border: 1px solid #2f4d8c;
+            padding: 0.8rem 1rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .cookie-table th {
+            background: #0a1c44;
+            color: white;
+            font-weight: 700;
+        }
+
+        .consent-box {
+            background: #0c1a3e;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid #3e6ed4;
+            margin: 1.8rem 0;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            border: 1px solid var(--cobalt-glow);
+            color: white;
+            padding: 0.6rem 1.8rem;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.2s;
+            margin: 0 0.5rem;
+        }
+
+        .btn-ghost:hover {
+            background: var(--zaffre-bright);
+            border-color: white;
+        }
+
+        footer {
+            background: #030c1a;
+            margin-top: 4rem;
+            padding: 2rem 0 1.8rem;
+            border-top: 1px solid #1f3b70;
+            font-size: 0.9rem;
+        }
+
+        .footer-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+
+        .footer-address, .footer-links {
+            background: #07183270;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+        }
+
+        .footer-links a {
+            color: #9bbaff;
+            margin-right: 1.5rem;
+            text-decoration: none;
+        }
+
+        hr {
+            border-color: #1e3a6e;
+            margin: 1.2rem 0;
+        }
+
+        .last-updated {
+            font-style: italic;
+            text-align: right;
+            font-size: 0.85rem;
+            margin-top: 1.5rem;
+            color: #8aa4df;
+        }
+
+        @media (max-width: 850px) {
+            .logo-area h1 {
+                font-size: 2rem;
+            }
+            .privacy-card {
+                padding: 1.2rem;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .cookie-table th, .cookie-table td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo-area">
+            <h1>⚓ ZAFFRE GASTRONOMY MATRIX</h1>
+            <p>where deep blue alchemy meets culinary infinity — 58,000+ words of unique recipes & gastrosophy</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="terms.html">Terms Of Privacy</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookies.html">Cookies Policy</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div style="display: flex; justify-content: flex-end; margin-top: 1rem;">
+        <span class="badge-policy">🍪 COOKIES: ESSENTIAL ONLY | NO TRACKING | FULLY GDPR/CCPA COMPLIANT</span>
+    </div>
+
+    <div class="cookie-hero">
+        <h2>🍪 Cookies & Similar Technologies<br><span style="font-size: 1.2rem; display: block;">The Zaffre Cookie Ethos — absolute minimalism, total transparency</span></h2>
+        <p style="max-width: 780px; margin: 0.8rem auto;">We believe that your online path through our cobalt kitchen should be free of invisible surveillance. This Cookies Policy explains the only technology we use: an essential session cookie that vanishes when you leave. No analytics, no trackers, no fingerprinting, no surprises.</p>
+    </div>
+
+    <div class="privacy-card">
+        <div class="section-title">1. Do We Use Cookies? — The Short Answer</div>
+        <div class="legal-text">
+            <p><strong>Yes, but only one strictly necessary session cookie.</strong> Zaffre Gastronomy Matrix does <strong>not</strong> deploy any advertising, performance, analytics, or third-party cookies. We have zero interest in tracking your browsing behavior across websites. Your privacy is an ingredient we never compromise.</p>
+            <div class="highlight-block">
+                🔒 <strong>Zero-Tracking Promise:</strong> No Google Analytics, no Meta/Facebook pixel, no TikTok SDK, no Hotjar, no mouse tracking, no fingerprinting libraries, no persistent cross-site identifiers. The matrix runs on pure code and respect.
+            </div>
+        </div>
+
+        <div class="section-title">2. Essential Session Cookie — The Only Exception</div>
+        <div class="legal-text">
+            <p>To enable certain core functionalities of our website — namely the anti-abuse protection for our contact forms and to maintain a seamless session for users — we place a minimal session cookie. Here are the technical details:</p>
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Cookie Name</th>
+                        <th>Purpose</th>
+                        <th>Duration</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>zaffre_session</code> (or similarly anonymous identifier)</td>
+                        <td>Prevents form spam and CSRF attacks; ensures that when you fill out the contact or workshop form, your request is processed securely. Also maintains brief session state — no personal data is stored inside this cookie.</td>
+                        <td>Session only — expires immediately upon closing the browser (or after 2 hours of inactivity).</td>
+                        <td>Strictly Necessary</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>This cookie does not recognize you across different devices, does not store your name, email, or any preferences, and cannot be used for behavioral profiling. Without this cookie, some security features of our forms would be impaired.</p>
+        </div>
+
+        <div class="section-title">3. No Third-Party Cookies — Absolute Independence</div>
+        <div class="legal-text">
+            <p>Unlike the vast majority of websites, we do not embed content from external platforms that would drop their own cookies. Specifically:</p>
+            <ul>
+                <li><strong>No embedded YouTube or Vimeo</strong> — any video content is self-hosted or uses privacy-enhanced no-cookie modes (but currently, we simply do not embed third-party videos).</li>
+                <li><strong>No Google Fonts, no external font CDNs</strong> — all typography is loaded locally from our server.</li>
+                <li><strong>No social media sharing buttons</strong> that include trackers (e.g., AddThis, ShareThis). We provide clean, manual links without tracking parameters.</li>
+                <li><strong>No advertisements, affiliate networks, or retargeting pixels</strong> — we are a gastronomic matrix, not a data broker.</li>
+            </ul>
+            <p>Therefore, when you visit Zaffre Matrix, no external company receives any information about your visit via cookies.</p>
+        </div>
+
+        <div class="section-title">4. Local Storage, IndexedDB, and Fingerprinting — Zero Usage</div>
+        <div class="legal-text">
+            <p>We do not store any information in your browser’s localStorage, sessionStorage, or IndexedDB for tracking purposes. There is no hidden fingerprinting mechanism (canvas, WebGL, audio, or device fingerprinting). We also abstain from using ETag or HTTP cache-based tracking.</p>
+            <div class="highlight-block">
+                🧼 <strong>Clean slate design:</strong> Zaffre's engineering team follows “privacy by default”: we never read or write any data to client-side storage except the minimal session cookie described above.
+            </div>
+        </div>
+
+        <div class="section-title">5. Cookie Consent & Your Control</div>
+        <div class="legal-text">
+            <p>Because we only use strictly necessary session cookies that are exempt from consent requirements under the ePrivacy Directive and GDPR, we do not display a pop-up cookie banner. However, we value your autonomy. You may at any time:</p>
+            <ul>
+                <li><strong>Disable cookies globally</strong> via your browser settings (note: disabling session cookies may break the contact form anti-spam mechanism, but you can still reach us via email at privacy@zaffrematrix.com).</li>
+                <li><strong>Clear your session cookies</strong> after browsing — simply close your browser or clear cookies in your privacy settings.</li>
+                <li><strong>Use private/incognito mode</strong> — the session cookie will be isolated and automatically erased once you close the private window.</li>
+            </ul>
+            <p>For more information about how to manage cookies in your browser, visit the help section of your specific browser (Chrome, Firefox, Safari, Edge, etc.).</p>
+        </div>
+
+        <div class="consent-box">
+            <span style="font-size: 1.4rem;">🍽️ Your cookie preferences</span><br>
+            <p style="margin: 0.5rem 0;">Since we use <strong>no tracking or analytics cookies</strong>, there’s nothing to opt out from, except the essential session cookie required for security.</p>
+            <div style="margin-top: 0.8rem;">
+                <button id="simulateCookieInfo" class="btn-ghost">📋 Show session cookie status</button>
+                <button id="manualClearHint" class="btn-ghost">🧹 How to clear cookies (reminder)</button>
+            </div>
+            <div id="cookieStatusMsg" style="margin-top: 1rem; font-size: 0.9rem; color: #bdd4ff;"></div>
+        </div>
+
+        <div class="section-title">6. Analytics & Performance — Nonexistent</div>
+        <div class="legal-text">
+            <p>Zaffre Gastronomy Matrix does <strong>not</strong> use any analytical tool such as Google Analytics, Matomo, Plausible, or similar. We deliberately choose not to measure page views, bounce rates, or user journeys. The matrix exists to inspire and inform, not to convert behaviors into data points. The only technical logs we keep are server access logs (IP addresses, timestamps, requested URLs) used exclusively for security and troubleshooting — these logs are automatically purged every 14 days and are never correlated into user profiles.</p>
+            <p>If we ever decide to implement anonymous, privacy-preserving analytics (e.g., self-hosted, no cookies, aggregated counts only), we will update this policy and provide a clear, opt-in mechanism. As of now, there is zero tracking.</p>
+        </div>
+
+        <div class="section-title">7. Third-party links and external resources</div>
+        <div class="legal-text">
+            <p>Our website may occasionally contain links to external culinary references, academic papers, or specialty ingredient suppliers. Those external websites operate under their own privacy and cookie policies. Zaffre Matrix has no control over their tracking technologies. We encourage you to review those policies before interacting with external sites. Clicking on such links does not cause any cookies to be set from our side.</p>
+        </div>
+
+        <div class="section-title">8. Do Not Track (DNT) & Global Privacy Control</div>
+        <div class="legal-text">
+            <p>Because we do not track users across sites or engage in targeted advertising, our website already honors the spirit of Do Not Track and Global Privacy Control. Your browser’s DNT header is respected automatically — we ignore no signals. If you have enabled Global Privacy Control or similar opt-out mechanisms, you are already benefiting from the highest level of privacy we offer.</p>
+        </div>
+
+        <div class="section-title">9. Updates to this Cookies Policy</div>
+        <div class="legal-text">
+            <p>Transparency is a living commitment. We may revise this Cookies Policy to reflect improvements in our privacy practices or changes in legal obligations. The “Last Updated” date indicates the latest version. If we ever contemplate introducing optional non-essential cookies (which is extremely unlikely given our ethos), we will notify all active subscribers via email and request explicit consent before deployment.</p>
+            <p>Any changes will be minor and will never introduce hidden trackers. You are encouraged to review this page periodically.</p>
+        </div>
+
+        <div class="section-title">10. Contact — Cookie Stewardship</div>
+        <div class="legal-text">
+            <p>If you have any questions or concerns about our cookie usage or your digital footprint, please reach out to our Data Protection Steward. We reply within 48 hours.</p>
+            <p>📧 <strong>privacy@zaffrematrix.com</strong><br>
+            📮 <strong>Zaffre Gastronomy Matrix — Privacy Office, 221B Cobalt Quay, Neptune Harbor, AZ 85018, USA</strong><br>
+            📞 +1 (602) 555-8932 (ask for Cookie & Privacy Steward).</p>
+            <p>You also have the right to lodge a complaint with your local Supervisory Authority (e.g., ICO in the UK, CNIL in France) if you believe your privacy rights are infringed — though we assure you they will not be.</p>
+        </div>
+
+        <div class="highlight-block" style="background: #0c1d40; text-align: center;">
+            ✦ <strong>Cobalt Pledge:</strong> No cookie walls, no deceptive cookie banners, no fake "legitimate interest" claims. Your visit to Zaffre Gastronomy Matrix is as clean as our signature water-based blue spirulina infusion.
+        </div>
+
+        <div class="last-updated">Last Updated: April 15, 2026 | Version 2.0 — Absolute Minimal Cookie Policy, No Analytics</div>
+        <hr>
+        <p style="font-size: 0.8rem; text-align: center; margin-top: 1rem;">🧿 This Cookies Policy is part of the Zaffre Matrix Privacy Ecosystem. We incorporate transparency by design: no hidden identifiers, no trackers, zero exploitation. Enjoy the matrix with complete peace of mind.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="container footer-flex">
+        <div class="footer-address">
+            📍 ZAFFRE GASTRONOMY MATRIX — MAIN ATELIER<br>
+            221B Cobalt Quay, Neptune Harbor, AZ 85018, USA<br>
+            📞 +1 (602) 555-8932 | ✉ kitchen@zaffrematrix.com<br>
+            Cookie & privacy queries: privacy@zaffrematrix.com
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a> 
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookies.html">Cookies Policy</a>
+            <p style="margin-top:0.8rem;">© 2026 Zaffre Gastronomy Matrix — Zero Tracking / Absolute Cookie Minimalism.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        // ensure console and interactive elements are aligned with the policy: only informational, no tracking, no storage beyond session cookie if any.
+        const statusBtn = document.getElementById('simulateCookieInfo');
+        const clearHint = document.getElementById('manualClearHint');
+        const msgDiv = document.getElementById('cookieStatusMsg');
+        
+        // Simple helper to check if session cookie exists (if browser sets our hypothetical zaffre_session, but we don't rely on actual presence)
+        function checkSessionCookieStatus() {
+            // we don't actually read cookie value for privacy reasons, just simulate that only session cookie could be present.
+            const cookies = document.cookie.split(';').map(c => c.trim());
+            const sessionCookieExists = cookies.some(c => c.startsWith('zaffre_session='));
+            if (sessionCookieExists) {
+                return "✓ Session cookie (zaffre_session) is active — this is the only cookie and it expires when you close your browser. It's used for security of forms. No tracking data.";
+            } else {
+                return "🍃 No zaffre_session cookie found. If you haven't used the contact form, that's expected. Even if you have, this cookie is strictly essential, contains no personal info, and is session-only.";
+            }
+        }
+
+        if(statusBtn) {
+            statusBtn.addEventListener('click', () => {
+                const status = checkSessionCookieStatus();
+                msgDiv.innerHTML = `<span style="background:#071c3a; padding:0.5rem 1rem; border-radius: 28px; display:inline-block;">${status}</span>`;
+            });
+        }
+
+        if(clearHint) {
+            clearHint.addEventListener('click', () => {
+                msgDiv.innerHTML = `<span style="background:#071c3a; padding:0.5rem 1rem; border-radius: 28px; display:inline-block;">🧹 You can manually clear cookies via browser settings (Privacy & Security → Clear Site Data). Since we only use a session cookie, closing your browser removes it automatically.</span>`;
+            });
+        }
+
+        // Optional: small console reassurance: no tracker, no analytics
+        console.log('🍪 Zaffre Cookies Policy: Absolutely no analytics or tracking cookies. Session cookie only for form security. You are in control.');
+        
+        // Ensure no potential localStorage usage for any tracking (safety)
+        if (window.localStorage) {
+            // just to double-check that no localStorage item from unknown scripts — but we don't set any. For complete alignment, clear anything if malicious?
+            // intentionally do nothing to avoid side effects.
+        }
+        
+        // add an indicator that the website doesn't set any analytics cookie
+        const style = document.createElement('style');
+        style.textContent = `/* Zaffre anti-tracking assurance */`;
+        document.head.appendChild(style);
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Terms of Service | Zaffre Gastronomy Matrix</title>
+    <meta name="description" content="Official terms of service, usage guidelines, intellectual property information, and user responsibilities for the Zaffre Gastronomy Matrix — the world's largest blue gastronomy archive.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #0a1128 0%, #0b1a3a 100%);
+            font-family: 'Segoe UI', 'Merriweather', Georgia, 'Times New Roman', serif;
+            color: #eef5ff;
+            line-height: 1.55;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --zaffre-deep: #0014a8;
+            --zaffre-bright: #1e3aff;
+            --cobalt-glow: #3b6eff;
+            --slate-light: #c2d0ff;
+            --midnight-bg: #07112e;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* HEADER (matches main pages exactly) */
+        header {
+            background: rgba(2, 10, 35, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 2px solid var(--zaffre-bright);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-area h1 {
+            font-size: 2.7rem;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #ffffff, #7c9cff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+        }
+
+        .logo-area p {
+            color: var(--slate-light);
+            font-style: italic;
+            font-size: 1rem;
+            border-left: 3px solid var(--cobalt-glow);
+            padding-left: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #bdd4ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+            border-bottom: 1px solid transparent;
+        }
+
+        nav a:hover, nav a.active {
+            color: white;
+            border-bottom-color: var(--cobalt-glow);
+        }
+
+        /* Terms specific styling */
+        .terms-hero {
+            background: radial-gradient(circle at 20% 40%, #0f234d, #04102b);
+            border-radius: 2rem;
+            padding: 2.5rem;
+            margin: 2rem 0 2rem 0;
+            border: 1px solid var(--zaffre-bright);
+        }
+
+        .terms-hero h2 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            background: linear-gradient(120deg, #ffffff, #8aadff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.8rem;
+        }
+
+        .effective-date {
+            display: inline-block;
+            background: #0e2350;
+            padding: 0.3rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-family: monospace;
+            margin-bottom: 1.2rem;
+            border: 1px solid #3b6eff40;
+        }
+
+        .terms-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .terms-card {
+            background: rgba(8, 20, 48, 0.7);
+            backdrop-filter: blur(4px);
+            border-radius: 1.8rem;
+            padding: 2rem;
+            border: 1px solid #2a4c8c;
+            transition: transform 0.2s ease, border-color 0.2s;
+        }
+
+        .terms-card:hover {
+            border-color: var(--cobalt-glow);
+            transform: translateY(-3px);
+        }
+
+        .terms-title {
+            font-size: 1.8rem;
+            border-left: 5px solid var(--cobalt-glow);
+            padding-left: 1.2rem;
+            margin-bottom: 1.2rem;
+            color: #cce4ff;
+        }
+
+        .terms-card p, .terms-card li {
+            margin-bottom: 1rem;
+            color: #dfeaff;
+        }
+
+        .terms-card ul, .terms-card ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .terms-card li {
+            margin-bottom: 0.6rem;
+        }
+
+        .highlight-block {
+            background: #0a1a3a;
+            border-left: 4px solid var(--cobalt-glow);
+            padding: 1.2rem 1.8rem;
+            border-radius: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .blue-badge {
+            background: #0e2b5e;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .signature-block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.2rem;
+            padding-top: 1rem;
+            border-top: 1px dashed #2e4a7a;
+        }
+
+        footer {
+            background: #030c1a;
+            margin-top: 4rem;
+            padding: 2rem 0 1.8rem;
+            border-top: 1px solid #1f3b70;
+            font-size: 0.9rem;
+        }
+
+        .footer-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+
+        .footer-address, .footer-links {
+            background: #07183270;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+        }
+
+        .footer-links a {
+            color: #9bbaff;
+            margin-right: 1.5rem;
+            text-decoration: none;
+        }
+
+        hr {
+            border-color: #1e3a6e;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 950px) {
+            .logo-area h1 {
+                font-size: 2rem;
+            }
+            .terms-hero h2 {
+                font-size: 1.9rem;
+            }
+            .terms-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo-area">
+            <h1>⚓ ZAFFRE GASTRONOMY MATRIX</h1>
+            <p>where deep blue alchemy meets culinary infinity — 58,000+ words of unique recipes & gastrosophy</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="terms.html" class="active">Terms Of Privacy</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookies.html">Cookies Policy</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div style="display: flex; justify-content: flex-end; margin-top: 1rem;">
+        <span class="blue-badge">📜 LEGAL FRAMEWORK | LAST UPDATED: APRIL 2026</span>
+    </div>
+
+    <div class="terms-hero">
+        <h2>Terms of Service</h2>
+        <div class="effective-date">✅ Effective Date: April 15, 2026 | Version 3.2 "Cobalt Charter"</div>
+        <p style="font-size: 1.1rem;">Welcome to the Zaffre Gastronomy Matrix ("we," "us," or "our"). By accessing or using our website, digital archives, recipes, essays, and any related services (collectively, the "Matrix"), you agree to comply with and be bound by the following terms. These terms protect our original 58,000+ word ecosystem, your rights as a culinary explorer, and the integrity of blue gastronomy as an evolving art form.</p>
+    </div>
+
+    <div class="terms-grid">
+        <!-- Acceptance & Scope -->
+        <div class="terms-card">
+            <h3 class="terms-title">📜 1. Acceptance of Terms</h3>
+            <p>By visiting any page of the Zaffre Gastronomy Matrix — including but not limited to recipe indexes, gastrosophy essays, lexicon entries, and workshop content — you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree, please refrain from using our services. We reserve the right to update these terms periodically; continued use constitutes acceptance of any modifications. Significant changes will be notified via a banner on the homepage or direct email to registered users.</p>
+            <div class="highlight-block">
+                <strong>⚡ Binding Agreement:</strong> The Matrix contains over 58,200 original words spanning original recipes, fermentation protocols, and sensory studies. These terms govern all forms of access, including educational, non-commercial, and professional use.
+            </div>
+        </div>
+
+        <!-- Intellectual property & unique content protection -->
+        <div class="terms-card">
+            <h3 class="terms-title">🎨 2. Intellectual Property & Original Content</h3>
+            <p>All content published on the Zaffre Gastronomy Matrix — including text, recipe instructions, method photography, culinary diagrams, article narratives, video transcripts, indexing structures, and compilation layouts — is the exclusive intellectual property of Zaffre Gastronomy Matrix and its contributing writers, unless explicitly stated otherwise. Our 58,000+ word database is protected by international copyright laws, Creative Commons (Attribution-NonCommercial-NoDerivs 4.0 International) where designated, and trade dress protections.</p>
+            <ul>
+                <li><strong>Permitted use:</strong> You may view, download, or print one copy of individual recipes or essays for personal, non-commercial home cooking or research, provided you retain all copyright and proprietary notices.</li>
+                <li><strong>Prohibited use:</strong> Scraping, republication, redistribution, selling, licensing, or using our content to train AI models or competing culinary databases is strictly forbidden.</li>
+                <li><strong>Derivative works:</strong> Creating adaptations or translations without written permission violates these terms. Plagiarism or “rewriting” of our unique gastronomic descriptions is actionable.</li>
+            </ul>
+            <p>All recipe modifications inspired by our blue gastronomy techniques must clearly credit “Zaffre Gastronomy Matrix” as inspiration source. Use of our unique terms such as “cobalt-lacquered,” “inductive blue dining,” or “umami leather process” for commercial branding requires a separate licensing agreement.</p>
+            <div class="blue-badge">✧ ORIGINALITY PLEDGE — every word human-crafted, every recipe kitchen-tested ✧</div>
+        </div>
+
+        <!-- User responsibilities and code of conduct -->
+        <div class="terms-card">
+            <h3 class="terms-title">🧑‍🍳 3. User Obligations & Code of Conduct</h3>
+            <p>We welcome discussion, experimentation, and the shared passion for chromatic gastronomy. However, when interacting with the Matrix (e.g., comments, contact forms, workshop registrations), you agree to the following:</p>
+            <ul>
+                <li>Provide accurate, current information and maintain the security of any account credentials.</li>
+                <li>Not to engage in harassment, hate speech, or any form of abusive behavior in community areas.</li>
+                <li>Not to upload, transmit, or distribute any malicious code, viruses, or content that infringes third-party rights.</li>
+                <li>Not to reverse-engineer, data-mine, or excessively crawl the website without express permission.</li>
+                <li>Respect that our fermentation and safety protocols are for informational purposes — you assume full responsibility when recreating recipes or handling ingredients like wild mushrooms, ferments, or pigments.</li>
+            </ul>
+            <div class="highlight-block">
+                <strong>⚠️ Culinary Liability Disclaimer:</strong> The Zaffre Gastronomy Matrix provides educational and creative content only. While our test kitchen follows rigorous safety standards, you are solely responsible for assessing ingredient suitability, potential allergens, food safety practices, and local regulations. We are not liable for any adverse reactions, kitchen injuries, or mishaps resulting from implementation of our content.
+            </div>
+        </div>
+
+        <!-- Third-party links & user submissions -->
+        <div class="terms-card">
+            <h3 class="terms-title">🔗 4. Third-Party Links & User Contributions</h3>
+            <p>The Matrix may include links to external vendors (e.g., specialty blue ingredient suppliers, bookstores, or academic journals) for your convenience. We do not endorse or take responsibility for the content, privacy practices, or products of third-party sites. Any transactions or interactions you conduct with third parties are solely between you and that party.</p>
+            <p><strong>User Contributions:</strong> From time to time, we may invite comments, recipe variations, or guest essays. By submitting any original content to us (including photos or text), you grant Zaffre Gastronomy Matrix a worldwide, royalty-free, perpetual license to publish, edit, and promote such contributions across our platforms, with attribution. You warrant that your submissions do not violate anyone else's intellectual property rights.</p>
+        </div>
+
+        <!-- Restrictions and termination -->
+        <div class="terms-card">
+            <h3 class="terms-title">🚫 5. Prohibited Activities & Termination</h3>
+            <p>We reserve the right, in our sole discretion, to suspend or terminate access to any part of the Matrix without prior notice for conduct that violates these Terms or disrupts other users. Prohibited activities include:</p>
+            <ul>
+                <li>Systematically extracting data to create separate collections or databases.</li>
+                <li>Using any automated system, including “robots,” “spiders,” or “offline readers,” to access the website for purposes that exceed normal human browsing.</li>
+                <li>Masking your IP address or impersonating any individual or entity.</li>
+                <li>Selling access to the Matrix or framing our content without authorization.</li>
+            </ul>
+            <p>In the event of termination, you must destroy any downloaded or printed content in your possession. We also reserve the right to pursue legal action for material breaches of our intellectual property rights or these terms.</p>
+        </div>
+
+        <!-- Disclaimer of warranties & limitation of liability -->
+        <div class="terms-card">
+            <h3 class="terms-title">⚠️ 6. Disclaimer of Warranties & Limitation of Liability</h3>
+            <p>THE ZAFFRE GASTRONOMY MATRIX AND ALL CONTENT, RECIPES, AND INFORMATION ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. WE MAKE NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, REGARDING THE ACCURACY, RELIABILITY, COMPLETENESS, OR SAFETY OF THE CONTENT. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+            <p>IN NO EVENT SHALL ZAFFRE GASTRONOMY MATRIX, ITS DIRECTORS, EMPLOYEES, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE SITE, INCLUDING BUT NOT LIMITED TO FOODBORNE ILLNESS, ALLERGIC REACTIONS, BURNS, EQUIPMENT MALFUNCTION, OR LOSS OF DATA. OUR TOTAL LIABILITY SHALL NOT EXCEED FIFTY DOLLARS ($50) OR THE AMOUNT YOU PAID TO ACCESS THE SITE (IF ANY).</p>
+            <div class="highlight-block">
+                <strong>🏛️ Jurisdictional Notice:</strong> Some jurisdictions do not allow limitations on implied warranties or liability for incidental damages; thus, some of the above may not apply to you. These terms shall be governed by the laws of the State of Arizona, without regard to conflict of laws principles.
+            </div>
+        </div>
+
+        <!-- Indemnification, modifications, and severability -->
+        <div class="terms-card">
+            <h3 class="terms-title">⚖️ 7. Indemnification & General Provisions</h3>
+            <p>You agree to indemnify, defend, and hold harmless Zaffre Gastronomy Matrix, its founders (including Dr. Elara Voss, Mason Cai, Samira Roy, and Jordan Park), and contributors from any claims, damages, losses, liabilities, costs, or expenses (including reasonable attorneys' fees) arising from your violation of these Terms, your misuse of the website, or your infringement of any third-party rights.</p>
+            <p><strong>Modifications to Terms:</strong> We may revise these Terms at any time by updating this page. The “Effective Date” at the top indicates the latest version. You are encouraged to review these terms periodically. Continued use following any changes constitutes acceptance.</p>
+            <p><strong>Severability:</strong> If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall continue in full force and effect.</p>
+            <p><strong>Entire Agreement:</strong> These Terms, together with our <a href="privacy.html" style="color:#8aadff;">Privacy Policy</a> and <a href="cookies.html" style="color:#8aadff;">Cookies Policy</a>, constitute the entire agreement between you and Zaffre Gastronomy Matrix regarding your use of the Matrix.</p>
+            <div class="signature-block">
+                <span>📧 Questions? Legal inquiries: legal@zaffrematrix.com</span>
+                <span>🏢 Zaffre Gastronomy Matrix — Atelier Registry: No. ZGM-2026-0415</span>
+            </div>
+        </div>
+
+        <!-- Additional educational use and attribution clause -->
+        <div class="terms-card">
+            <h3 class="terms-title">📚 8. Academic & Fair Use Guidelines</h3>
+            <p>Educators, students, and researchers may quote short excerpts (up to 250 words per document) from our essays or recipes for non-commercial educational purposes, provided clear attribution is given: “Source: Zaffre Gastronomy Matrix (www.zaffrematrix.com) — © [Year].” For any use beyond this, including course packs, anthologies, or public presentations, please contact our permissions department. We actively support culinary education; many of our fermentation protocols and pigment extraction methods can be shared under an educational commons license upon written request.</p>
+            <p>✧ <strong>Zero tolerance for content scraping:</strong> We employ advanced detection for plagiarism, AI training corpus extraction, and commercial reuploading. Violators will be subject to DMCA takedown notices and legal action where applicable.</p>
+        </div>
+    </div>
+
+    <!-- Acknowledge and acceptance interactive message (non-binding but user-friendly) -->
+    <div style="background: rgba(3, 16, 45, 0.8); border-radius: 2rem; padding: 1.8rem; margin-bottom: 2rem; text-align: center; border: 1px solid #2a4c8c;">
+        <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">🌊 By exploring the Zaffre Gastronomy Matrix, you honor the deep traditions of original gastronomic scholarship.</p>
+        <p>If you have any doubts about these terms, please contact our atelier before proceeding. We are committed to transparency, culinary freedom, and safeguarding the integrity of 58,000+ words of pure chromatic knowledge.</p>
+        <div class="blue-badge" style="margin-top: 1rem; background: #102c60;">✓ Last reviewed by the Matrix Legal Guild — April 2026 ✓</div>
+    </div>
+</main>
+
+<footer id="foot">
+    <div class="container footer-flex">
+        <div class="footer-address">
+            📍 ZAFFRE GASTRONOMY MATRIX — MAIN ATELIER<br>
+            221B Cobalt Quay, Neptune Harbor, AZ 85018, USA<br>
+            📞 +1 (602) 555-8932 | ✉ kitchen@zaffrematrix.com<br>
+            Hours: Mon-Fri 9am–6pm (MST) | Legal correspondence: legal@zaffrematrix.com
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a> 
+            <a href="contact.html">Contact</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+            <p style="margin-top:0.8rem;">© 2026 Zaffre Gastronomy Matrix — All rights reserved. Unique human-crafted content exceeding 58,600 words. Terms enforceable by the Cobalt Charter.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // simple console notification, adds a lightweight dynamic year to footer if needed (already static)
+    console.log("Zaffre Gastronomy Matrix — Terms of Service page (Cobalt Charter v3.2). All content legally protected.");
+    // optional active nav highlight via JS robustness
+    document.querySelectorAll('nav a').forEach(link => {
+        if(link.getAttribute('href') === 'terms.html' || link.getAttribute('href') === 'terms.html') {
+            link.classList.add('active');
+        }
+    });
+</script>
+</body>
+</html>
